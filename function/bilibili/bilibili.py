@@ -388,6 +388,9 @@ class BiliBiliCheckIn(object):
             if SEND_KEY == '':
                 sendNotify.send(title = u"哔哩哔哩签到",msg = msg)
             msg_list.append(msg)
+        else:
+            if SEND_KEY == '':
+                sendNotify.send(title = u"哔哩哔哩签到",msg = "cookie已过期，请更新")
         return msg_list
 
 
